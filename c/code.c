@@ -13,7 +13,7 @@ struct name_node {
 void print_all_entries(struct name_node *l)
 {
   struct name_node *iter = l;
-  while (iter != NULL) {
+  while (iter->name != NULL) {
     printf("Data %s\n", iter->name);
     iter = iter->next;
   }
